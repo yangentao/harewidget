@@ -2,10 +2,10 @@ name: harewidget
 description: "Merge StatefullWidget & State into one widget."
 repository: https://github.com/yangentao/harewidget
 homepage: https://github.com/yangentao/harewidget
-version: 1.0.0
+version: 1.0.1
 
 environment:
-  sdk: ^3.5.0
+  sdk: ^3.6.0
 
 dependencies:
   flutter:

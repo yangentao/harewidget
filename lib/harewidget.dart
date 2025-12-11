@@ -51,11 +51,12 @@ abstract class HareWidget extends StatefulWidget {
 
 class HareWidgetState extends State<HareWidget> {
   void _updateState(VoidCallback c) {
-    if (mounted) {
-      SchedulerBinding.instance.addPostFrameCallback((_) {
+    if (!mounted) return;
+    SchedulerBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
         setState(c);
-      });
-    }
+      }
+    });
   }
 
   void _checkCreate() {

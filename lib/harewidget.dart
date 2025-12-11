@@ -3,7 +3,6 @@ library;
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart' show SchedulerBinding;
 
 abstract class HareWidget extends StatefulWidget {
   final StateHolder holder = StateHolder();
@@ -52,11 +51,7 @@ abstract class HareWidget extends StatefulWidget {
 class HareWidgetState extends State<HareWidget> {
   void _updateState(VoidCallback c) {
     if (!mounted) return;
-    SchedulerBinding.instance.addPostFrameCallback((_) {
-      if (mounted) {
-        setState(c);
-      }
-    });
+    setState(c);
   }
 
   void _checkCreate() {

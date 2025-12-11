@@ -2,7 +2,7 @@ name: harewidget
 description: "Merge StatefullWidget & State into one widget."
 repository: https://github.com/yangentao/harewidget
 homepage: https://github.com/yangentao/harewidget
-version: 1.0.2
+version: 1.0.3
 
 environment:
   sdk: ^3.7.0

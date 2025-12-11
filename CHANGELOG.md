@@ -4,3 +4,6 @@
 * call setState in SchedulerBinding.instance.addPostFrameCallback
 ## 1.0.2
 * fix setState issue
+
+## 1.0.3
+* fix setState issue
